@@ -1,9 +1,10 @@
-class CarsController < ApplicationController
+class CarsController < ProtectedController
   before_action :set_car, only: [:show, :update, :destroy]
 
   # GET /cars
   def index
-    @cars = Car.all
+    # @cars = Car.all
+    @cars = current_user.cars
 
     render json: @cars
   end
@@ -15,7 +16,8 @@ class CarsController < ApplicationController
 
   # POST /cars
   def create
-    @car = Car.new(car_params)
+    # @car = Car.new(car_params)
+    @car = current_user.cars.build(car_params)
 
     if @car.save
       render json: @car, status: :created, location: @car
@@ -41,7 +43,7 @@ class CarsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_car
-      @car = Car.find(params[:id])
+      @car = current_user.cars.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
