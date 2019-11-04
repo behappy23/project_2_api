@@ -1,23 +1,21 @@
 Project 2
 
   'AutoMainTain'
+  I started planning for this project by creating user stories, wireframes and ERD.
+  Technologies used was Ruby on Rails, Ruby.
 
-  AS A USER I WANT TO BE ABLE TO SIGN UP
-  AS A USER I WANT TO BE ABLE TO LOGIN
-  AS A USER I WANT TO BE ABLE TO LOGOUT
-  AS A USER I WANT TO BE ABLE TO CHANGE PASSWORD
+  I began by scaffolding my resources into my project, making all my data catagories and to write curl scripts for all of my API requests. When I was able to get all of my curl scripts to succeed, I deployed my server and started on my front end.
 
-    AS A USER I WANT TO BE ABLE TO ADD A CAR
-    AS A USER I WANT TO BE ABLE TO ADD A VIN NUMBER
-    AS A USER I WANT TO BE ABLE TO ADD A MAKE OF CAR
-    AS A USER I WANT TO BE ABLE TO ADD A MODEL OF CAR
-    AS A USER I WANT TO BE ABLE TO ADD YEAR OF CAR
-    AS A USER I WANT TO BE ABLE TO ADD DATE OF OWNERSHIP
+Future outlook:
+  I would like to create another table that is attached to each car that would display all the maintenance history.
+Add a drop down menu of preloaded cars that you can add instead of adding each make and model
 
-    AS A USER I WANT TO BE ABLE TO ADD MAINTAINENCE HISTORY TO CAR
-      -DESCRIPTION OF SERVICE
-      -DATE OF SERVICE
-      -MILEAGE OF SERVICE
-      -COST OF SERVICE
-      -PARTS REPLACED
-      -SERVICE PERFORMED BY(SHOP, OR OWNER)
+Links
+AuotMainTain
+https://behappy23.github.io/AutoMainTain/
+
+ERD
+https://imgur.com/KTJm5pT
+
+Github Repository
+https://github.com/behappy23/AutoMainTain
